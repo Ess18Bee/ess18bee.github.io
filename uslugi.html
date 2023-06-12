@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz wycieczki</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+    <h1>Travel-expert</h1>
+    <nav>
+      <ul>
+        <li><a href="Glowna.html">Strona główna</a></li>
+        <li><a href="onas.html">O nas</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="plany.html">Aktualne plany</a></li>
+      </ul>
+    </nav>
+  </header>
+<br><br><br><br>
+  <div class="form-container">
+    <h2>Formularz wycieczki</h2>
+    <form id="trip-form">
+      <div class="form-group">
+        <label for="destination">Wybierz miejsce wycieczki:</label>
+        <select id="destination" name="destination">
+          <option value="korsyka">Korsyka</option>
+          <option value="tromso">Tromso</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="month">Wybierz miesiąc:</label>
+        <select id="month" name="month">
+          <option value="styczeń">Styczeń</option>
+          <option value="luty">Luty</option>
+          <option value="marzec">Marzec</option>
+          <option value="kwiecień">Kwiecień</option>
+          <option value="maj">Maj</option>
+          <option value="czerwiec">Czerwiec</option>
+          <option value="lipiec">Lipiec</option>
+          <option value="sierpień">Sierpień</option>
+          <option value="wrzesień">Wrzesień</option>
+          <option value="październik">Październik</option>
+          <option value="listopad">Listopad</option>
+          <option value="grudzień">Grudzień</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="price">Cena:</label>
+        <input type="text" id="price" name="price" readonly>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <br><br><br><br>
+  <footer>
+    <p>&copy; 2023 Travel-expert. Wszelkie prawa zastrzeżone.</p>
+    <script>
+      var currentDate = new Date();
+      var dateTimeString = currentDate.toLocaleString();
+      var footer = document.querySelector("footer");
+      var dateTimeElement = document.createElement("p");
+      dateTimeElement.textContent = "Aktualna data i godzina: " + dateTimeString;
+      footer.appendChild(dateTimeElement);
+    </script>
+  </footer>
+</body>
+</html>

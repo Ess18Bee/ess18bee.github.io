@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan pobytu w Tromso</title>
+  <link rel="stylesheet" href="styles4.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1 style="text-align: left;">Travel-expert</h1>
+    <nav>
+      <ul>
+        <li><a href="Glowna.html">Strona główna</a></li>
+        <li><a href="onas.html">O nas</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="plany.html">Aktualne plany</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Plan pobytu w Tromso</h1>
+  
+  <div class="day">
+    <h2 class="day-title">Dzień 1: Zwiedzanie miasta</h2>
+    <p class="day-description">
+      Przyjazd do Tromso i zwiedzanie miasta.
+      Spacer po Storgata, głównej ulicy handlowej.
+      Odwiedzanie Polaria - centrum edukacyjnego poświęconego arktycznej przyrodzie.
+      Podziwianie Katedry w Tromso, znanej jako "Lodowa Katedra".
+    </p>
+  </div>
+  
+  <div class="day">
+    <h2 class="day-title">Dzień 2: Rejs za zorzą polarną</h2>
+    <p class="day-description">
+      Wieczorny rejs łodzią po fiordach w poszukiwaniu zorzy polarnych.
+      Podziwianie magicznego spektaklu świetlnego na nocnym niebie.
+    </p>
+  </div>
+  
+  <div class="day">
+    <h2 class="day-title">Dzień 3: Narciarstwo biegowe</h2>
+    <p class="day-description">
+      Wyjazd na narty biegowe w jednym z okolicznych ośrodków narciarskich.
+      Korzystanie z dobrze przygotowanych tras w malowniczych górskich krajobrazach.
+    </p>
+  </div>
+  
+  <div class="day">
+    <h2 class="day-title">Dzień 4: Polarna przygoda</h2>
+    <p class="day-description">
+      Wizyta w Husky Farm, gdzie można spotkać psy zaprzęgowe i odbyć emocjonujący przejazd na sankach.
+      Wędrówka po zimowym krajobrazie i podziwianie oszałamiającej przyrody Arktyki.
+    </p>
+  </div>
+  
+  <div class="day">
+    <h2 class="day-title">Dzień 5: Wycieczka do wyspy Sommarøy</h2>
+    <p class="day-description">
+      Wyjazd na wycieczkę do urokliwej wyspy Sommarøy.
+      Spacer po białych piaskach plaż i podziwianie turkusowych wód Morza Norweskiego.
+      Możliwość łapania widoków na dzikie zwierzęta i ptaki morskie.
+    </p>
+    <br><br><a href="plany.html">Wróć>>></a>
+  </div>
+
+  <footer><p>&copy; 2023 Travel-expert. Wszelkie prawa zastrzeżone.</p>
+    <script>
+      var currentDate = new Date();
+      var dateTimeString = currentDate.toLocaleString();
+      var footer = document.querySelector("footer");
+      var dateTimeElement = document.createElement("p");
+      dateTimeElement.textContent = "Aktualna data i godzina: " + dateTimeString;
+      footer.appendChild(dateTimeElement);
+    </script>
+  </footer>
+</body>
+</html>
